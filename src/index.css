@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-outline: #777575;
+  --color-on-secondary-container: #e8fbff;
+  --color-primary: #de8eff;
+  --color-outline-variant: #494847;
+  --color-secondary-container: #006875;
+  --color-error-dim: #d73357;
+  --color-primary-dim: #b90afc;
+  --color-on-primary-container: #3d0056;
+  --color-surface: #0e0e0e;
+  --color-on-primary-fixed: #000000;
+  --color-error: #ff6e84;
+  --color-tertiary: #ff8d87;
+  --color-surface-container-lowest: #000000;
+  --color-on-secondary: #004d57;
+  --color-on-surface-variant: #adaaaa;
+  --color-surface-container-high: #201f1f;
+  --color-background: #0e0e0e;
+  --color-on-error: #490013;
+  --color-on-tertiary: #62080e;
+  --color-on-primary: #4f006e;
+  --color-inverse-on-surface: #565554;
+  --color-surface-container-highest: #262626;
+  --color-on-tertiary-container: #4e0006;
+  --color-primary-fixed: #d779ff;
+  --color-surface-bright: #2c2c2c;
+  --color-error-container: #a70138;
+  --color-surface-container: #1a1919;
+  --color-primary-container: #d779ff;
+  --color-secondary-dim: #00d4ec;
+  --color-surface-dim: #0e0e0e;
+  --color-secondary-fixed: #26e6ff;
+  --color-surface-variant: #262626;
+  --color-on-background: #ffffff;
+  --color-inverse-primary: #9900d1;
+  --color-tertiary-fixed: #ff928c;
+  --color-on-primary-fixed-variant: #4b0069;
+  --color-on-tertiary-fixed-variant: #711518;
+  --color-surface-container-low: #131313;
+  --color-tertiary-fixed-dim: #fc7d77;
+  --color-tertiary-dim: #f57872;
+  --color-on-surface: #ffffff;
+  --color-primary-fixed-dim: #cf62ff;
+  --color-on-secondary-fixed-variant: #005964;
+  --color-secondary: #00e3fd;
+  --color-tertiary-container: #f97a74;
+  --color-on-error-container: #ffb2b9;
+  --color-inverse-surface: #fcf8f8;
+  --color-surface-tint: #de8eff;
+  --color-on-secondary-fixed: #003a42;
+  --color-secondary-fixed-dim: #00d7f0;
+  --color-on-tertiary-fixed: #3a0003;
+
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+}
+
+@layer utilities {
+  .glass-bubble {
+    background: rgba(215, 121, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
